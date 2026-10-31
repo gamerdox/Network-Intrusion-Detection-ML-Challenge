@@ -1,0 +1,6 @@
+# Competition data is not redistributed here - download it from Kaggle into data/
+data/*.csv
+__pycache__/
+*.pyc
+submissions_out/
+validate_output.txt
