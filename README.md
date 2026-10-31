@@ -55,12 +55,7 @@ on profiles it has never seen.
 Result of `python validate_grouped_cv.py` (one cluster layout, 5 folds, macro-F1). The cluster layout depends on the
 library versions, so the numbers change between environments; two real runs are shown:
 
-| Variant | Author's machine (Python 3.13, scikit-learn 1.9) | Google Colab |
-|---|---|---|
-| HistGradientBoosting, raw port numbers kept (1 stage) | 0.727 | 0.657 |
-| HistGradientBoosting, ports removed (1 stage) | 0.720 | 0.665 |
-| **Model A** (2 stages, HistGradientBoosting) | 0.721 | 0.661 |
-| **Model B** (2 stages, RandomForest) | 0.738 | 0.639 |
+
 
 Differences between variants of up to ~0.1 change sign from one run to the other, so this validation **cannot reliably
 rank the variants**. What it does show is that every variant lands around 0.64-0.74 on unseen behaviour profiles, far
